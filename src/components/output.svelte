@@ -1,5 +1,6 @@
 <div
-	class="bg-black/70 rounded-xl overflow-hidden text-left text-xl min-w-[400px] h-fit"
+	class={'bg-black/70 rounded-xl overflow-hidden text-left text-xl min-w-[400px] h-fit ' +
+		$$props.class}
 	data-id="output"
 >
 	<div class="w-full bg-gray-700 p-2 flex gap-2">

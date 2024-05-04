@@ -14,6 +14,7 @@ export default defineConfig({
 			'@lib': path.resolve(__dirname, './src/lib'),
 			'@stores': path.resolve(__dirname, './src/lib/stores'),
 			'@styles': path.resolve(__dirname, './src/lib/styles'),
+			$lib: path.resolve('./src/lib'),
 		},
 	},
 })

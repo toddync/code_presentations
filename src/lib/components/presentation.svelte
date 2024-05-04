@@ -82,7 +82,7 @@
 	}
 </script>
 
-<div class="reveal">
+<div class={'reveal ' + $$props.class}>
 	<div class="slides">
 		<slot />
 	</div>

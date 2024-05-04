@@ -28,11 +28,11 @@
 	data-id={id}
 	class={$$props.class || ''}
 	{...$$restProps}>
-  <code
+	<code
 		data-trim
 		data-line-numbers={lines || null}
 		data-ln-start-from={offset}
 		class="language-{lang} no-scrollbar">
-<slot />
-  </code>
+		<slot />
+	</code>
 </pre>
