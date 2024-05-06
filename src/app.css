@@ -51,7 +51,7 @@
 	* {
 		@apply border-border;
 	}
-	body {
+	#app, .reveal-full-page, body {
 		@apply bg-background text-foreground;
 	}
 	.hljs {

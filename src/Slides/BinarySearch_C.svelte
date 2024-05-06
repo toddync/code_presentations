@@ -1,7 +1,7 @@
 <script>
 	import 'iconify-icon'
 	import { Slide, Code } from '@components'
-	import Output from '../components/output.svelte'
+	import Output from '../components/Output.svelte'
 	import Presentation from '@lib/components/presentation.svelte'
 </script>
 

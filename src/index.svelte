@@ -1,18 +1,19 @@
-<script lang="ts">
-	import BubbleSortC from './Slides/BubbleSort_C.svelte'
-	import BinarySearchC from './Slides/BinarySearch_C.svelte'
+<script>
 	import Search from './components/Search.svelte'
-
-	document.documentElement.classList.add('dark')
+	
+	import BubbleSortC from './Slides/BubbleSort_C/index.svelte'
+	import BinarySearchC from './Slides/BinarySearch_C.svelte'
+	import Home from './Home.svelte'
 
 	import { Route, Router } from 'svelte-routing'
-	import Home from './Home.svelte'
 	export let url = ''
+	
+	document.documentElement.classList.add('dark')
 </script>
 
 <link rel="stylesheet" href="src/app.css" />
 
-<Search />
+<Search/>
 
 <Router {url}>
 	<Route path="/" component={Home} />
