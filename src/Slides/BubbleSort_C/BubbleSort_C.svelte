@@ -473,13 +473,12 @@
 		<div
 			class="w-fit max-w-full mx-auto place-content-center no-scrollbar text-4xl flex gap-5"
 		>
-			<Code lang="c" offset="3" class="min-w-fit" lines="all|3|9-12|all">
+			<Code lang="c" offset="3" class="min-w-fit" lines="all|4|8-12|all">
 				{`
 						int main(){
 							int array[] = {8, 4, 2, 6, 9, 0, 3, 1, 5, 7};
-							int temp;
-							int size = sizeof(array) / sizeof(array[0]);
-							size--;
+							int size = sizeof(array) / sizeof(array[0]) - 1,
+								temp;
 	
 							for(int I = 0; I < size; I++){
 								for(int J = 0; J < size - I; J++){
@@ -506,10 +505,9 @@
 	
 						int main(){
 							int array[] = {8, 4, 2, 6, 9, 0, 3, 1, 5, 7};
-							int temp;
-							int size = sizeof(array) / sizeof(array[0]);
-							size--;
-	
+							int size = sizeof(array) / sizeof(array[0]) - 1,
+								temp;
+
 							for(int I = 0; I < size; I++){
 								for(int J = 0; J < size - I; J++){
 									if(array[J] > array[J + 1]){
